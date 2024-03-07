@@ -24,6 +24,7 @@ body {
 }
 
 #logo h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     padding-top: 50px;
 }
@@ -34,13 +35,13 @@ body {
     margin: 0px 0 0 50px;
 }
 
-label {
+.labels-grande {
     text-align: center;
     font-size: 35px;
-    margin: 20px 0 0 100px;
+    margin: 50px 0 0 100px;
 }
 
-input {
+#email, #senha {
     border: none;
     display: inline-block;
     padding-left: 10px;
@@ -50,18 +51,60 @@ input {
     display: inline-block;
     width: 300px;
     height: 30px;
+    margin-left: 15px;
+}
+
+#lembrar-senha {
+    /*Input do type checkbox*/
+    margin: 50px 0 0 220px;
+    display: inline-block;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+#lembre {
+    /*label do input checkbox*/
+    font-size: 22px;
+    margin: 0 0 0 10px;
+    text-align: center;
+    display: inline-block;
 }
 
 
 button {
-    padding: 10px;
-    margin: 50px 0 0 250px;
+    width: 300px;
+    height: 70px;
+    color: white;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin: 50px 0 0 180px;
     border: none;
-    border-radius: 10px;
+    text-align: center;
+    border-radius: 20px;
     font-size: 46px;
     background-color: #0097B2;
 }
 button:hover {
     cursor: pointer;
     opacity: 80%;
+}
+
+#esqueceu-senha{
+    text-align: center;
+     font-size: 22px;
+}
+
+#esqueceu-senha:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#link-cadastro {
+    text-decoration: none;
+}
+
+#link-cadastro:hover {
+    opacity: 60%;
 }

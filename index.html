@@ -9,20 +9,31 @@
 <body>
     <div id="conteiner-login">
         <div id="logo">
-            <h1>DevBook</h1>
+            <h1>DEVBOOK</h1>
         </div>
 
         <div id="login">
             <form action="telaPrincipal.html">
-                <label id="emailLabel" for="email">Email:</label>
+                <label class="labels-grande" for="email">Email:</label>
                 <input type="text" placeholder="e-mail...." id="email">
                 <br>
-                <label for="senha">Senha:</label>
+                <label class="labels-grande" for="senha">Senha:</label>
                 <input type="password" placeholder="senha...." id="senha">
                 <br>
 
+                
+                <input type="checkbox" name="lembrar" id="lembrar-senha">
+                <label for="lembrar-senha" id="lembre"> Lembre de mim</label>
+
                 <button type="submit">Entrar</button>
+
+                <p id="esqueceu-senha">
+                Esqueceu a senha?</p>
+
+                <p style="text-align: center; font-size: 25px;">Não tem uma conta? <a id="link-cadastro" href="cadastro.html">Cadastre-se</a></p>
             </form>
+
+            
         </div>
     </div>
     <script src="src/script.js"></script>
