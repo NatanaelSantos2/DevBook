@@ -45,6 +45,7 @@ body {
 .input-email input, .input-senha input {
     width: 100%;
     border-radius: 5px;
+
 }
 
 .lembrar-senha {
@@ -83,6 +84,8 @@ button:hover {
     text-align: center;
     font-size: 1.2rem;
     margin: 0;
+    width: 753.5px;
+
 }
 
 #esqueceu-senha:hover{
@@ -90,10 +93,69 @@ button:hover {
     opacity: 80%;
 }
 
+#logo {
+    width: 500px;
+    height: 150px;
+    margin: 5px 0 0 110px;
+    text-align: center;
+}
+
+
+#login {
+    width: 653.7px;
+    height: 485px;
+    margin: 0px 0 0 50px;
+    text-align: center;
+
+}
+
+.labels-grande {
+    font-size: 35px;
+    margin: 50px 0 0 0px;
+}
+
+
+button {
+    width: 300px;
+    height: 70px;
+    font-size: 46px;
+    background-color: #0097B2;
+    border-radius: 20px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin: 50px 0 0 180px;
+    color: white;
+    border: none;
+
+}
+
+button:hover {
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #008197;
+
+}
+
+#lembrar-senha {
+    padding-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+#esqueceu-senha {
+    text-align: center;
+    font-size: 22px;
+}
+
+#esqueceu-senha:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
 #link-cadastro {
     text-decoration: none;
 }
-
 #link-cadastro:hover {
     opacity: 60%;
 }
