@@ -1,0 +1,82 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    background-color: #1C2120;
+    margin: 0;
+}
+
+#cabecalho {
+    padding: 15px;
+    background-color: #8D8F84;
+    height: 70px;
+}
+
+#logo {
+    position: absolute;
+    height: 70px;
+}
+
+#logo:hover {
+    opacity: 80%;
+}
+
+#pesquisar {
+    margin: 10px 0 0 85px;
+    width: 30%;
+    height: 40px;
+    background-color: #545454;
+    font-size: 20px;
+    border: none;
+    padding-left: 10px;
+    color: white;
+    position: absolute;
+    display: inline-block;
+}
+
+#pesquisar::placeholder {
+    color: white;
+    padding-left: 10px;
+
+}
+
+#pesquisar:focus {
+    box-shadow: none;
+    border: 0.1px solid black;
+}
+
+#nav-do-cabecalho ul{
+    display: flex;
+    list-style: none;
+}
+
+#nav-do-cabecalho li{
+    padding: 0px 0 75px 65px;
+
+}
+
+#nav-do-cabecalho a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+#nav-do-cabecalho a:hover {
+    opacity: 80%;
+}
+
+#nav-do-cabecalho {
+    position: absolute;
+    top: 5px;
+    left: 800px;
+}
+
+
+#nav-do-cabecalho img {
+    display: block;
+    height: 45px;
+    margin-left: 100px;
+}
+
+#nav-do-cabecalho img:first-child {
+    margin-left: 70px;
+}
