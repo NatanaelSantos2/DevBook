@@ -1,0 +1,103 @@
+#rells-status {
+    height: 110px;
+    background-color: #0097B2;
+}
+
+#rells-status ul{
+    list-style: none;
+    display: flex;
+}
+
+#rells-status li {
+    margin-left: 50px;
+}
+
+#rells-status img{
+    margin-top: 15px;
+    height: 80px;
+}
+
+#rells-status img:hover {
+    cursor: pointer;
+    opacity: 80%;
+
+}
+
+#parte-de-publicar {
+    height: 120px;
+    display: inline-block;
+}
+
+#parte-de-publicar h1 {
+    color: #FFFFFF;
+    font-size: 35px;
+    position: absolute;
+    top: 225px;
+    left: 40px;
+
+}
+
+#parte-de-publicar input {
+    position: absolute;
+    top: 255px;
+    left: 250px;
+    height: 40px;
+    border-radius: 15px;
+    width: 25%;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+    background-color: #545454;
+    color: white;
+}
+
+#parte-de-publicar input::placeholder {
+    text-align: center;
+    color: #DBD6D6;
+}
+
+#parte-de-publicar img {
+    position: absolute;
+    top: 230px;
+    left: 700px;
+    height: 50px;
+
+}
+
+#parte-de-publicar p {
+    position: absolute;
+    top: 265px;
+    left: 680px;
+    color: #FFFFFF;
+}
+
+#parte-de-publicar p:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#parte-de-publicar img {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#parte-de-publicar button {
+    height: 75px;
+    background-color: #46B43D;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    font-size: 30px;
+    position: absolute;
+    top: 255px;
+    left: 800px;
+
+}
+
+#parte-de-publicar button:hover {
+    cursor: pointer;
+    opacity: 80%;
+
+}
