@@ -29,13 +29,11 @@ body {
 .labels-grande {
     text-align: center;
     font-size: 35px;
-
 }
 
 .input-email, .input-senha {
     display: flex;
     margin-top: 10px;
-    
 }
 
 .input-email input {
@@ -45,7 +43,6 @@ body {
 .input-email input, .input-senha input {
     width: 100%;
     border-radius: 5px;
-
 }
 
 .lembrar-senha {
@@ -85,7 +82,6 @@ button:hover {
     font-size: 1.2rem;
     margin: 0;
     width: 753.5px;
-
 }
 
 #esqueceu-senha:hover{
@@ -100,20 +96,17 @@ button:hover {
     text-align: center;
 }
 
-
 #login {
     width: 653.7px;
     height: 485px;
     margin: 0px 0 0 50px;
     text-align: center;
-
 }
 
 .labels-grande {
     font-size: 35px;
     margin: 50px 0 0 0px;
 }
-
 
 button {
     width: 300px;
@@ -126,14 +119,12 @@ button {
     margin: 50px 0 0 180px;
     color: white;
     border: none;
-
 }
 
 button:hover {
     cursor: pointer;
     margin-bottom: 10px;
     background-color: #008197;
-
 }
 
 #lembrar-senha {
@@ -141,7 +132,6 @@ button:hover {
     width: 20px;
     height: 20px;
 }
-
 
 #esqueceu-senha {
     text-align: center;
@@ -156,6 +146,7 @@ button:hover {
 #link-cadastro {
     text-decoration: none;
 }
+
 #link-cadastro:hover {
     opacity: 60%;
 }
@@ -163,3 +154,4 @@ button:hover {
 span hr{
     width: 500px;
 }
+

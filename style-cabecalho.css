@@ -5,14 +5,26 @@ body {
 }
 
 #cabecalho {
-    padding: 15px;
+    padding: 15px 0 15px 0;
     background-color: #8D8F84;
-    height: 70px;
+    text-align: center;
 }
 
-#logo {
-    position: absolute;
-    height: 70px;
+.navSpace {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px 0 40px;
+}
+
+#nav-do-cabecalho li {
+    margin-left: 20px;
+}
+
+.pesqEsaida {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo:hover {
@@ -20,22 +32,19 @@ body {
 }
 
 #pesquisar {
-    margin: 10px 0 0 85px;
+    margin-left: 10px;
     width: 30%;
     height: 40px;
     background-color: #545454;
     font-size: 20px;
     border: none;
-    padding-left: 10px;
+    padding-right: 250px;
     color: white;
-    position: absolute;
-    display: inline-block;
 }
 
 #pesquisar::placeholder {
     color: white;
     padding-left: 10px;
-
 }
 
 #pesquisar:focus {
@@ -50,7 +59,8 @@ body {
 
 #nav-do-cabecalho li{
     padding: 0px 0 0 65px;
-
+    font-size: 1.5rem;
+    padding: 0;
 }
 
 #nav-do-cabecalho a {
@@ -62,21 +72,4 @@ body {
 
 #nav-do-cabecalho a:hover {
     opacity: 80%;
-}
-
-#nav-do-cabecalho {
-    position: absolute;
-    top: 5px;
-    left: 800px;
-}
-
-
-#nav-do-cabecalho img {
-    display: block;
-    height: 45px;
-    margin-left: 100px;
-}
-
-#nav-do-cabecalho img:first-child {
-    margin-left: 70px;
 }

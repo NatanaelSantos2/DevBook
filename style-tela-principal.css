@@ -20,7 +20,6 @@
 #rells-status img:hover {
     cursor: pointer;
     opacity: 80%;
-
 }
 
 #parte-de-publicar {
@@ -93,13 +92,11 @@
     position: absolute;
     top: 255px;
     left: 800px;
-
 }
 
 #parte-de-publicar button:hover {
     cursor: pointer;
     opacity: 80%;
-
 }
 
 #lugar-das-postagens {
@@ -108,4 +105,19 @@
     font-size: 40px;
 }
 
+/* breakpoints */
+@media (max-width: 992px) { 
+    #rells-status li {
+        margin-left: 10px;
+    }
+
+    #rells-status {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .rellsSpace {
+        padding-left: 15px;
+    }
+}
 
