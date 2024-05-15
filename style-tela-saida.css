@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--backg-color);
+}
+
+/*Modo Responsivo de cores do sistema
+         Dark e Light Mode
+*/
+
+:root {
+    --font-color: black;
+    --backg-color: white;
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --font-color: white;
+        --backg-color: #1C2120;
+    }
+
+    html {
+        color-scheme: dark;
+    }
+}
+
+/*Fim das configurações de cores*/
+
+ul, li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+img {
+    border-radius: 50px;
+}
+
+#foto-perfil {    
+    position: absolute;
+    left: 980px;
+}
+
+
+#desc-foto {
+    position: absolute;
+    font-size: 55px;
+    margin: 130px 880px;
+    font-weight: bold;
+}
+
+#configuracoes {
+    background-color: #303030;
+    margin: 220px 0 0 45vw;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+#configuracoes:hover {
+    cursor: pointer;
+    background-image: linear-gradient(black, #319921);
+
+}
+
+#outrasopcoes {
+    margin: 30px 0 0 0px;
+    padding: 10px;
+    height: 200px;
+}
+
+#outrasopcoes ul,li{
+    text-align: center;
+    padding-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 35px;
+}
+
+#outrasopcoes a {
+    background-color: #303030;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+#outrasopcoes a:hover {
+    cursor: pointer;
+    background-image: linear-gradient(black, #319921);
+}

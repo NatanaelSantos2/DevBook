@@ -1,12 +1,40 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
-    background-color: #1C2120;
+    background-color: var(--backg-color);
     margin: 0;
 }
 
+/*Modo Responsivo de cores do sistema
+         Dark e Light Mode
+*/
+
+:root {
+    --font-color-cabecalho: black;
+    --backg-color: white;
+    --backg-cabecalho: #8D8F84;
+    --backg-input-pesquisar: white;
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --font-color-input: white;
+        --font-color-cabecalho: black;
+        --backg-color: #1C2120;
+        --backg-cabecalho: #8D8F84;
+        --backg-input-pesquisar: #545454;
+    }
+
+    html {
+        color-scheme: dark;
+    }
+}
+
+/*Fim das configurações de cores*/
+
+
 #cabecalho {
     padding: 15px 0 15px 0;
-    background-color: #8D8F84;
+    background-color: var(--backg-cabecalho);
     text-align: center;
 }
 
@@ -35,15 +63,15 @@ body {
     margin-left: 10px;
     width: 30%;
     height: 40px;
-    background-color: #545454;
+    background-color: var(--backg-input-pesquisar);
     font-size: 20px;
     border: none;
     padding-right: 250px;
-    color: white;
+    color: var(--font-color-input);
 }
 
 #pesquisar::placeholder {
-    color: white;
+    color: var(--font-color-input);
     padding-left: 10px;
 }
 
@@ -66,7 +94,7 @@ body {
 #nav-do-cabecalho a {
     font-size: 22px;
     text-decoration: none;
-    color: #000000;
+    color: var(--font-color-cabecalho);
 
 }
 
