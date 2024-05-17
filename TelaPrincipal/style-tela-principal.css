@@ -1,3 +1,29 @@
+body {
+    background-color: var(--backg-color);
+}
+
+/*Modo Responsivo de cores do sistema
+         Dark e Light Mode
+*/
+
+:root {
+    --backg-color: rgb(173, 173, 173);
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --backg-color: #1C2120;
+
+    }
+
+    html {
+        color-scheme: dark;
+    }
+}
+
+/*Fim das configurações de cores*/
+
+
 #rells-status {
     height: 110px;
     background-color: #0097B2;

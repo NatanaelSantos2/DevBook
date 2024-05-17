@@ -5,6 +5,33 @@ body {
     margin: 0;
 }
 
+/*Dark e light mode*/
+
+:root {
+    --bg-color-input: white;
+    --font-color-placeholder-input: black;
+    --font-color-input: black;
+    --font-color-btn: white;
+    --bg-color-btn: #01a9c7;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color-input: black;
+        --font-color-placeholder-input: white;
+        --font-color-btn: white;
+        --bg-color-btn: blue;
+        --font-color-input: white;
+
+    }
+    
+    html {
+        color-scheme: dark;
+    }
+}
+
+/* Fim configurações Dark e light mode*/
+
 #conteiner-login{
     color: white;
     width: 100%;
@@ -42,7 +69,16 @@ body {
 
 .input-email input, .input-senha input {
     width: 100%;
-    border-radius: 5px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: var(--bg-color-input);
+    color: var(--font-color-input);
+}
+
+.input-email input::placeholder, .input-senha input::placeholder {
+    color: var(--font-color-placeholder-input);
 }
 
 .lembrar-senha {
@@ -64,13 +100,20 @@ body {
 
 .bnt-Entrar button{
     padding: 5px 100px;
-    color: white;
+    color: var(--font-color-btn);
     border: none;
     border-radius: 20px;
     font-size: 2rem;
-    background-color: #01a9c7;
+    background-color: var(--bg-color-btn);
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+.bnt-Entrar button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: var(--font-color-btn);
+    transition: 1s;
 }
 
 button:hover {

@@ -1,0 +1,25 @@
+body {
+    background-color: var(--backg-color);
+}
+
+/*Modo Responsivo de cores do sistema
+         Dark e Light Mode
+*/
+
+:root {
+    --font-color: black;
+    --backg-color: rgb(173, 173, 173);
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --font-color: white;
+        --backg-color: #1C2120;
+    }
+
+    html {
+        color-scheme: dark;
+    }
+}
+
+/*Fim das configurações de cores*/
