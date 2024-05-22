@@ -9,7 +9,7 @@ Confira como está o projeto através do site: https://devbooksite.netlify.app/
 
 O projeto está com dividido em várias telas, cada tela está em uma pasta com o seu nome, por exemplo: a tela de saída está na pasta ` Tela Saída ` e em cada pasta contém todos os outros arquivos necessários para cada tela, como arquivos .css, ou .js.
 
-- A tela inicial é justamente a tela em que o usuário irá fazer o seu login para poder acessar o site, esta tela está na pasta `TelaLogin`
+- A tela inicial é justamente a tela em que o usuário irá fazer o seu login para poder acessar o site, esta tela está na pasta `TelaLogin`, mas o arquivo `index.html` está do lado de fora desta pasta para que o site de deploy consiga localizar os arquivos corretamente
 
 E a partir dessa pasta você pode acessar as outras telas que são as seguintes:
 
