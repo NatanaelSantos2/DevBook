@@ -34,19 +34,28 @@ body {
 
 /* Fim configurações Dark e light mode*/
 
-#conteiner-login{
-    color: white;
-    width: 100%;
-    height: 100vh;
-    margin: auto;
+#conteiner-login {
     display: flex;
-    justify-content: center;
+    max-width: 900px;
+    height: 100vh;
     align-items: center;
+    justify-content: center;
 }
 
-#cards {
-    width: 900px;
+main {
+    display: flex;
+    justify-content: center;
+
 }
+/* #conteiner-login{
+    color: white;
+    width: 100%;
+    
+    margin: auto;
+    display: flex;
+
+} */
+
 
 #cards h1{
     font-size: 4rem;
@@ -55,27 +64,28 @@ body {
     text-align: center;
 }
 
-.labels-grande {
+/* .labels-grande {
     text-align: center;
     font-size: 2.1rem;
-}
+} */
 
-.input-email, .input-senha {
+/* .input-email, .input-senha {
     display: flex;
     margin-top: 10px;
-}
-
-.input-email input {
     margin-left: 13px;
-}
+} */
+
+/* .input-email input {
+    margin-left: 13px;
+} */
 
 .input-email input, .input-senha input {
-    font-size: 1.1rem;
-    width: 100%;
-    height: 50px;
-    margin-top: 40px;
-    border-radius: 10px;
-    padding-left: 15px;
+    /* font-size: 1.1rem; */
+    /* width: 100%; */
+    /* height: 50px; */
+    margin-top: 10px;
+    border-radius: 6px;
+    padding: 5px 15px;
     background-color: var(--bg-color-input);
     color: var(--font-color-input);
 }
@@ -107,9 +117,10 @@ body {
     border: none;
     border-radius: 20px;
     font-size: 2rem;
+    font-weight: bold;
     background-color: var(--bg-color-btn);
     cursor: pointer;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .bnt-Entrar button:hover{
@@ -127,7 +138,7 @@ button:hover {
     text-align: center;
     font-size: 1.2rem;
     margin: 0;
-    width: 753.5px;
+    /* width: 753.5px; */
 }
 
 #esqueceu-senha:hover{
@@ -137,32 +148,30 @@ button:hover {
 
 #logo {
     width: 500px;
-    height: 150px;
+    /* height: 150px; */
     margin: 5px 0 0 110px;
     text-align: center;
 }
 
 #login {
     width: 653.7px;
-    height: 485px;
-    margin: 0px 0 0 50px;
+    /* height: 485px; */
+ 
     text-align: center;
 }
 
-.labels-grande {
+/* .labels-grande {
     font-size: 35px;
     margin: 50px 0 0 0px;
-}
+} */
 
 button {
     width: 300px;
-    height: 70px;
+    /* height: 70px; */
     font-size: 46px;
     background-color: #0097B2;
     border-radius: 20px;
     display: block;
-    padding: 10px 10px 10px 10px;
-    margin: 50px 0 0 180px;
     color: white;
     border: none;
 }
@@ -176,13 +185,14 @@ button:hover {
 #lembrar-senha {
     padding-top: 10px;
     width: 20px;
-    height: 20px;
+    /* height: 20px; */
 }
 
 #esqueceu-senha {
     text-align: center;
     font-size: 22px;
 }
+
 
 #esqueceu-senha:hover {
     cursor: pointer;
@@ -202,7 +212,6 @@ span hr{
 }
 
 /* Mini laptops */
-
 @media (max-width: 1100px) {
         html, body {
             overflow-x: hidden;
@@ -218,43 +227,41 @@ span hr{
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            height: auto;
+            /* height: auto; */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
     
-        #logo {
+        /* #logo {
             width: 500px;
             height: 150px;
-            text-align: center;
-        }
+        } */
     
-        #logo h1 {
+        /* #logo h1 {
             width: 200px;
-        }
+        } */
         
     
-        #conteiner-login{
+        /* #conteiner-login{
             color: white;
             width: auto;
-            height: 100%;
             margin: 50px;
             display: flex;
             flex-direction: column;
-        }
-    
+        } */
+/*     
         #login {
             width: auto;
             height: 800px;
-        }
+        } */
     
         
-        .input-email input, .input-senha input {
+        /* .input-email input, .input-senha input {
             font-size: 1.2rem;
             width: 600px;
             margin-left: 15px;
-        }
+        } */
         
         .lembrar-senha {
             display: flex;
@@ -270,9 +277,9 @@ span hr{
         .bnt-Entrar {
             display: flex;
             justify-content: center;
-            padding-left: 200px;
-            width: 200px;
-            height: 50px;
+            /* padding-left: 200px; */
+            /* width: 200px; */
+            /* height: 50px; */
             margin: 0;
         }
     
@@ -295,8 +302,8 @@ span hr{
         #esqueceu-senha{
             text-align: center;
             font-size: 1.2rem;
-            padding-left: 20px;
-            width: 753.5px;
+            /* padding-left: 20px; */
+            /* width: 753.5px; */
         }
     
     
@@ -320,7 +327,7 @@ span hr{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: auto;
+        /* height: auto; */
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -328,7 +335,7 @@ span hr{
 
     #logo {
         width: 500px;
-        height: 150px;
+        /* height: 150px; */
         text-align: center;
     }
 
@@ -336,41 +343,40 @@ span hr{
         width: 200px;
     }
     
-
+/* 
     #conteiner-login{
         color: white;
         width: auto;
-        height: 100%;
         margin: 50px;
         display: flex;
         flex-direction: column;
-    }  
+    }   */
 
 
     #login {
         width: auto;
-        height: 800px;
+        /* height: 800px; */
     }
 
-    .input-email, .input-senha {
+    /* .input-email, .input-senha {
         display: flex;
         margin-top: 10px;
-    }
-    
+    } */
+/*     
     .input-email {
         margin-left: 150px;
-    }
+    } */
     
-    .input-senha  {
+    /* .input-senha  {
         margin-left: 140px;
-    }
+    } */
     
     .input-email input, .input-senha input {
         font-size: 1.5rem;
-        width: 300px;
-        height: 50px;
-        margin-top: 40px;
-        margin-left: 20px;
+        /* width: 300px; */
+        /* height: 50px; */
+        /* margin-top: 40px; */
+        /* margin-left: 20px; */
         border-radius: 10px;
         background-color: var(--bg-color-input);
         color: var(--font-color-input);
@@ -387,14 +393,13 @@ span hr{
         width: 1rem;
     }
     
-    .bnt-Entrar {
-        display: flex;
-        justify-content: center;
+    /* .bnt-Entrar {
+ 
         padding-left: 200px;
         width: 200px;
         height: 50px;
         margin: 0;
-    }
+    } */
 
     .bnt-Entrar button{
         display: flex;
@@ -420,7 +425,7 @@ span hr{
     }
 
     #cards {
-        height: 900px;
+        /* height: 900px; */
     }
 
 }
@@ -430,69 +435,53 @@ span hr{
 @media (max-width: 576px) {
 
         html, body {
-            overflow-x: hidden;
+            /* overflow-x: hidden; */
             background-image: linear-gradient( #000000, #319921);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
     
         }
     
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
             background-image: linear-gradient( #000000, #319921);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 576px;
-            height: auto;
+            /* width: 576px; */
+            /* height: auto; */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
     
-        #logo {
-            width: 500px;
-            height: 150px;
-            text-align: center;
-        }
-    
-        #logo h1 {
-            width: 200px;
-        }
         
     
-        #conteiner-login{
+        /* #conteiner-login{
             color: white;
             width: auto;
-            height: 100%;
             margin: 50px;
             display: flex;
             flex-direction: column;
-        }
+        } */
     
         #login {
             width: auto;
-            height: 800px;
+            /* height: 800px; */
         }
     
-        .input-email, .input-senha {
+        /* .input-email, .input-senha {
             display: flex;
             margin-top: 10px;
-        }
-        
+        } */
+/*         
         .input-email {
             margin-left: 150px;
-        }
+        } */
         
-        .input-senha  {
+        /* .input-senha  {
             margin-left: 140px;
-        }
+        } */
         
         .input-email input, .input-senha input {
-            font-size: 1.5rem;
-            width: 300px;
-            height: 50px;
+            /* font-size: 1.5rem; */
+            /* width: 300px; */
+            /* height: 50px; */
             margin-top: 40px;
             margin-left: 20px;
             border-radius: 10px;
@@ -504,19 +493,19 @@ span hr{
             display: flex;
             justify-content: center;
             margin-top: 30px;
-            font-size: 1.2rem;
+            /* font-size: 1.2rem; */
         }
         
-        .lembrar-senha input {
+        /* .lembrar-senha input {
             width: 1rem;
-        }
+        } */
         
         .bnt-Entrar {
             display: flex;
             justify-content: center;
-            padding-left: 200px;
-            width: 200px;
-            height: 50px;
+            /* padding-left: 200px; */
+            /* width: 200px; */
+            /* height: 50px; */
             margin: 0;
         }
     
@@ -527,24 +516,24 @@ span hr{
             border: none;
             text-align: center;
             border-radius: 20px;
-            font-size: 2rem;
+            /* font-size: 2rem; */
             background-color: var(--bg-color-btn);
             cursor: pointer;
         }
     
         #div-esqueceu-senha {
-            margin-top: 120px;
+            /* margin-top: 120px; */
         }    
     
-        #esqueceu-senha{
+        /* #esqueceu-senha{
             text-align: center;
             font-size: 1.2rem;
             padding-left: 20px;
             width: 753.5px;
-        }
+        } */
     
-        #cards {
+        /* #cards {
             height: 1000px;
-        }
+        } */
     
 }
