@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient( #000000, #319921);
+    background-size: cover;
+    background-position: center;
+    
+  
+}
+
+/*Dark e light mode*/
+
+:root {
+    --bg-color-input: white;
+    --font-color-placeholder-input: black;
+    --font-color-btn: white;
+    --bg-color-btn: #01a9c7;
+    --font-color-input: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color-input: black;
+        --font-color-placeholder-input: white;
+        --font-color-btn: white;
+        --bg-color-btn: blue;
+        --font-color-input: white;
+
+    }
+    
+    html {
+        color-scheme: dark;
+    }
+}
+
+/* Fim configurações Dark e light mode*/
+
+
+#conteiner-login{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    margin: 200px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner-login h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#logo {
+    width: 500px;
+    height: 150px;
+    margin: 5px auto;
+    text-align: center;
+    display: flex;
+}
+
+#logo h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    padding-top: 0px;
+}
+
+
+#login {
+    width: 653.7px;
+    height: 485px;
+    margin: 0px 0 0 600px;
+}
+
+#login h1{
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.labels-grande {
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 0 0 100px;
+    color: var(--font-color-placeholder-input);
+}
+
+#nome, #descricao, #email, #senha {
+    border: none;
+    display: inline-block;
+    padding-left: 10px;
+    box-shadow: none;
+    border-radius: 10px;
+    font-size: 25px;
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    margin-left: 15px;
+    background-color: var(--bg-color-input);
+    color: var(--font-color-input);
+
+}
+
+button {
+    width: 300px;
+    height: 70px;
+    color: var(--font-color-btn);
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin: 50px 0 0 180px;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 46px;
+    background-color: var(--bg-color-btn);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: var(--font-color-btn);
+    transition: 1s;
+}
+
+
