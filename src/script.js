@@ -1,2 +1,0 @@
-// Teste
-console.log("Testando")

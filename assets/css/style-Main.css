@@ -1,7 +1,5 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
     background-color: var(--backg-color);
-    margin: 0;
 }
 
 /*Modo Responsivo de cores do sistema
@@ -9,19 +7,13 @@ body {
 */
 
 :root {
-    --font-color-cabecalho: black;
-    --backg-color: white;
-    --backg-cabecalho: #8D8F84;
-    --backg-input-pesquisar: white;
+    --backg-color: rgb(173, 173, 173);
 }
 
 @media (prefers-color-scheme: dark){
     :root {
-        --font-color-input: white;
-        --font-color-cabecalho: black;
         --backg-color: #1C2120;
-        --backg-cabecalho: #8D8F84;
-        --backg-input-pesquisar: #545454;
+
     }
 
     html {
@@ -32,72 +24,125 @@ body {
 /*Fim das configurações de cores*/
 
 
-#cabecalho {
-    padding: 15px 0 15px 0;
-    background-color: var(--backg-cabecalho);
-    text-align: center;
+#rells-status {
+    height: 110px;
+    background-color: #0097B2;
 }
 
-.navSpace {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 40px 0 40px;
-}
-
-#nav-do-cabecalho li {
-    margin-left: 20px;
-}
-
-.pesqEsaida {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#logo:hover {
-    opacity: 80%;
-}
-
-#pesquisar {
-    margin-left: 10px;
-    width: 30%;
-    height: 40px;
-    background-color: var(--backg-input-pesquisar);
-    font-size: 20px;
-    border: none;
-    padding-right: 250px;
-    color: var(--font-color-input);
-}
-
-#pesquisar::placeholder {
-    color: var(--font-color-input);
-    padding-left: 10px;
-}
-
-#pesquisar:focus {
-    box-shadow: none;
-    border: 0.1px solid black;
-}
-
-#nav-do-cabecalho ul{
-    display: flex;
+#rells-status ul{
     list-style: none;
+    display: flex;
 }
 
-#nav-do-cabecalho li{
-    padding: 0px 0 0 65px;
-    font-size: 1.5rem;
-    padding: 0;
+#rells-status li {
+    margin-left: 50px;
 }
 
-#nav-do-cabecalho a {
-    font-size: 22px;
-    text-decoration: none;
-    color: var(--font-color-cabecalho);
-
+#rells-status img{
+    margin-top: 15px;
+    height: 80px;
 }
 
-#nav-do-cabecalho a:hover {
+#rells-status img:hover {
+    cursor: pointer;
     opacity: 80%;
 }
+
+#parte-de-publicar {
+    height: 120px;
+    display: inline-block;
+}
+
+#parte-de-publicar h1 {
+    color: #FFFFFF;
+    font-size: 35px;
+    position: absolute;
+    top: 225px;
+    left: 40px;
+}
+
+#parte-de-publicar input {
+    position: absolute;
+    top: 255px;
+    left: 250px;
+    height: 40px;
+    border-radius: 15px;
+    width: 25%;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+    background-color: #545454;
+    color: white;
+}
+
+#parte-de-publicar input::placeholder {
+    text-align: center;
+    color: #DBD6D6;
+}
+
+#parte-de-publicar img {
+    position: absolute;
+    top: 230px;
+    left: 700px;
+    height: 50px;
+
+}
+
+#parte-de-publicar p {
+    position: absolute;
+    top: 265px;
+    left: 680px;
+    color: #FFFFFF;
+}
+
+#parte-de-publicar p:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#parte-de-publicar img {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#parte-de-publicar button {
+    height: 75px;
+    background-color: #46B43D;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    font-size: 30px;
+    position: absolute;
+    top: 255px;
+    left: 800px;
+}
+
+#parte-de-publicar button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#lugar-das-postagens {
+    margin: 0px 20px ;
+    color: white;
+    font-size: 40px;
+}
+
+/* breakpoints */
+@media (max-width: 992px) { 
+    #rells-status li {
+        margin-left: 10px;
+    }
+
+    #rells-status {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .rellsSpace {
+        padding-left: 15px;
+    }
+}
+
