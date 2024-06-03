@@ -1,27 +1,27 @@
 const postagens = [
     {
-        caminhoImg: '../assets/meu perfil.png',
+        caminhoImg: '../../assets/images/main/colocar outra foto aqui.png',
         nome: 'Valdir',
         texto: 'Olha que código massa que eu estou criando',
         codigo: 'export const examChallengeId = 647e22d18acb466c97ccbef8 export const examJson id: examChallengeId,title: Exam Certification, numberOfQuestionsInExam:3'
     },
 
     {
-        caminhoImg: '../assets/casa.png',
+        caminhoImg: '../../assets/images/main/colocar outra foto aqui.png',
         nome: 'Pedro',
         texto: 'Olha que código massa que eu estou criando',
         codigo: 'export const examChallengeId = 647e22d18acb466c97ccbef8 export const examJson id: examChallengeId,title: Exam Certification, numberOfQuestionsInExam:3'
     },
 
     {
-        caminhoImg:'../assets/logo.png',
+        caminhoImg:'../../assets/images/main/colocar outra foto aqui.png',
         nome: 'Luiz',
         texto: 'Olha que código massa que eu estou criando',
         codigo: 'export const examChallengeId = 647e22d18acb466c97ccbef8 export const examJson id: examChallengeId,title: Exam Certification, numberOfQuestionsInExam:3'
     },
 
     {
-        caminhoImg: '../assets/meu perfil.png',
+        caminhoImg: '../../assets/images/profile/perfil.png',
         nome: 'Natanael',
         texto: 'Olha que código massa que eu estou criando',
         codigo: 'export const examChallengeId = 647e22d18acb466c97ccbef8 export const examJson id: examChallengeId,title: Exam Certification, numberOfQuestionsInExam:3'

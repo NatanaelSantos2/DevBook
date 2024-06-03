@@ -1,7 +1,7 @@
 const notificacoes = [
 
     {
-        caminhoImg: '../assets/meu perfil.png',
+        caminhoImg: '../../assets/images/profile/perfil.png',
         nome: 'Valdir',
         texto: 'curtiu sua publicação',
         publicacao: 'olha que código massa'
@@ -9,7 +9,7 @@ const notificacoes = [
     },
 
     {
-        caminhoImg: '../assets/logo.png',
+        caminhoImg: '../../assets/images/header/logo.png',
         nome: 'Pedro',
         texto: 'curtiu sua publicação',
         publicacao: 'olha que código massa'
@@ -17,7 +17,7 @@ const notificacoes = [
     },
 
     {
-        caminhoImg: '../assets/meu perfil.png',
+        caminhoImg: '../../assets/images/profile/perfil.png',
         nome: 'Natanael',
         texto: 'curtiu sua publicação',
         publicacao: 'olha que código massa'
@@ -25,7 +25,7 @@ const notificacoes = [
     },
 
     {
-        caminhoImg: '../assets/sino.png',
+        caminhoImg: '../../assets/images/header/icon-notificacao.png',
         nome: 'João',
         texto: 'curtiu sua publicação',
         publicacao: 'olha que código massa'
