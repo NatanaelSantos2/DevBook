@@ -8,29 +8,59 @@
     <title>Cadastro conta DevBook</title>
 </head>
 <body>
-    <div id="conteiner-login">
-        <div id="logo">
-            <h1>DEVBOOK</h1>
-        </div>
+    <main>
+        <section id="container">
+            <div id="container-register">
+                <div id="titulo">
+                    <h1>DEVBOOK</h1>
+                </div>
+                <!--Formulário-->
+                <div id="register">
+                    <form action="../main/index.html">
+                        <h2>Cadastro</h2>
+                        <p>Cadastre-se no DevBook</p>
 
-        <div id="login">
-            <form action="../main/index.html">
+                        <!--Divisão entre os inputs para haver espaçamento entre eles-->
+                        <div class="divisao-inputs">
+                            <div class="textos">
+                                <label for="nome">Nome</label>                         
+                            </div>
+                            <input type="text" placeholder="Digite seu nome" name="nome_do_usuario" id="nome" required>
+                        </div>
 
-                <label class="labels-grande" for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="nome...." required>
+                        <div class="divisao-inputs">
+                            <div class="textos">
+                                <label for="descricao">Descrição</label>
+                            </div>
+                            <input type="text" name="descricao_do_usuario" id="descricao" placeholder="Digite sua descricao">
+                        </div>
+                        
+                        <div class="divisao-inputs">
+                            <div class="textos">
+                                <label for="e-mail">Email</label>                         
+                            </div>
+                            <input type="email" placeholder="Digite seu endereço de email" name="email_do_usuario" id="e-mail" required>
+                        </div>
 
-                <label class="labels-grande" for="descricao">Descrição:</label>
-                <input type="text" id="descricao" placeholder="descricao....">
+                        <div class="divisao-inputs">
+                            <div class="textos">
+                                <label for="senha">Senha</label>
+                            </div>
+                            <input type="password" name="senha_do_usuario" id="senha" placeholder="Digite sua senha" required>
+                        </div>
 
-                <label class="labels-grande" for="email">Email:</label>
-                <input type="email" placeholder="e-mail...." id="email" required>
-                <br>
-                <label class="labels-grande" for="senha">Senha:</label>
-                <input type="password" placeholder="senha...." id="senha" required>
-                <br>
 
-                <button type="submit">Cadastrar-se</button>
-            </form>
-        </div>
+                        <button id="btn-register">Cadastrar-se</button>
+                    </form>
+                </div>
+                
+                <div id="paragrafo-criar-conta">
+                    <p>
+                        Já possui conta? <a href="../../views/auth/login.html">Clique aqui e entre na sua conta</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

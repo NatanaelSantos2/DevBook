@@ -19,7 +19,7 @@ a:hover {
     display: flex;
     flex-flow: column wrap;
     height: 100vh;
-    background-color: var(--color-accent); /*var(--color-accent);*/
+    background-color: var(--color-accent); 
     justify-content: center;
     align-items: center;
 }
@@ -33,7 +33,7 @@ a:hover {
     flex-flow: column;
     width: 95%;
     height: auto;
-    background-color: #1B4332; /*var(--color-primary);*/
+    background-color: var(--color-primary);
 }
 
 #titulo h1{
@@ -95,7 +95,7 @@ a:hover {
     font-size: 1.2rem;
 }
 
-@media (min-width: 1204px) {
+@media (min-width: 1024px) {
     #container-login {
         width: 50%;
         height: auto;
@@ -133,7 +133,6 @@ a:hover {
     #container-login {
         width: 50%;
         height: auto;
-
     }
 
     #titulo h1{
