@@ -10,42 +10,45 @@
 
 <body>
     <main>
-        <div id="conteiner-login">
-            <div id="cards">
-                <h1>DEVBOOK</h1>
+        <section id="container">
+            <div id="container-login">
+                <div id="titulo">
+                    <h1>DEVBOOK</h1>
+                </div>
+                <!--Formulário-->
                 <div id="login">
                     <form action="../main/index.html">
-                        <div class="inputs">
-                            <div class="input-email">
-                                <label class="labels-grande" for="email">Email:</label>
-                                <input type="email" placeholder="Digite seu e-mail" required>
+                        <h2>Entrar</h2>
+                        <p>Acesse o DevBook usando o seu e-mail e senha.</p>
+
+                        <!--Divisão entre os inputs para haver espaçamento entre eles-->
+                        <div class="divisao-inputs">
+                            <div class="textos">
+                                <label for="e-mail">Email</label>                         
+                                <a href="#">Precisa de ajuda?</a>
                             </div>
-                            <div class="input-senha">
-                                <label class="labels-grande" for="senha">Senha:</label>
-                                <input type="password" placeholder="Digite sua senha" required>
-                            </div>
+                            <input type="email" placeholder="Digite seu endereço de email" name="email_do_usuario" id="e-mail" required>
                         </div>
 
-                        <div class="lembrar-senha">
-                            <input type="checkbox" name="lembrar">
-                            <label for="lembrar-senha">Lembre de mim</label>
+                        <div class="divisao-inputs">
+                            <div class="textos">
+                                <label for="senha">Senha</label>
+                                <a href="#">Esqueceu a senha?</a>
+                            </div>
+                            <input type="password" name="senha_do_usuario" id="senha" placeholder="Digite sua senha" required>
                         </div>
-                        <div class="bnt-Entrar">
-                            <button type="submit">Entrar</button>
-                        </div>
-                        <div id="div-esqueceu-senha">
-                            <span>
-                                <hr>
-                                <p id="esqueceu-senha">Esqueceu a senha?</p>
-                                <hr>
-                            </span>
-                        </div>
-                        <p style="text-align: center; font-size: 25px;">Não tem uma conta? <a id="link-cadastro"
-                                href="../auth/register.html">Cadastre-se</a></p>
+
+                        <button id="btn-entrar">Entrar</button>
                     </form>
                 </div>
+                
+                <div id="paragrafo-criar-conta">
+                    <p>
+                        Novo em nossa plataforma? <a href="../../views/auth/register.html">Crie a sua conta aqui</a>
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>

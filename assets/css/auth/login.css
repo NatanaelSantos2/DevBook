@@ -1,369 +1,164 @@
+@import url(../reset.css);
+@import url(../standart-color.css);
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
-    background-image: linear-gradient( #000000, #319921);
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*Dark e light mode*/
-
-:root {
-    --bg-color-input: white;
-    --font-color-placeholder-input: black;
-    --font-color-input: black;
-    --font-color-btn: white;
-    --bg-color-btn: #01a9c7;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-color-input: black;
-        --font-color-placeholder-input: white;
-        --font-color-btn: white;
-        --bg-color-btn: blue;
-        --font-color-input: white;
-
-    }
-    
-    html {
-        color-scheme: dark;
-    }
-}
-
-/* Fim configurações Dark e light mode*/
-
-#conteiner-login {
-    display: flex;
-    max-width: 900px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-
-}
-
-#cards h1{
-    font-size: 4rem;
-    margin-top: 0;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.input-email input, .input-senha input {
-    margin-top: 10px;
-    border-radius: 6px;
-    padding: 5px 15px;
-    background-color: var(--bg-color-input);
-    color: var(--font-color-input);
-}
-
-.input-email input::placeholder, .input-senha input::placeholder {
-    color: var(--font-color-placeholder-input);
-}
-
-.lembrar-senha {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    font-size: 1.2rem;
-    gap: 5px;
-}
-
-.lembrar-senha input {
-    width: 1rem;
-}
-
-.bnt-Entrar {
-    display: flex;
-    justify-content: center;
-}
-
-.bnt-Entrar button{
-    padding: 5px 100px;
-    color: var(--font-color-btn);
-    border: none;
-    border-radius: 20px;
-    font-size: 2rem;
-    font-weight: bold;
-    background-color: var(--bg-color-btn);
-    cursor: pointer;
-}
-
-.bnt-Entrar button:hover{
-    cursor: pointer;
-    background-color: black;
-    color: var(--font-color-btn);
-    transition: 1s;
-}
-
-button:hover {
-    background-color: #008197;
-}
-
-#esqueceu-senha{
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-#esqueceu-senha:hover{
-    cursor: pointer;
-    opacity: 80%;
-}
-
-#logo {
-    width: 500px;
-    margin: 5px 0 0 110px;
-    text-align: center;
-}
-
-#login {
-    width: 653.7px;
-    text-align: center;
-}
-
-button {
-    width: 300px;
-    font-size: 46px;
-    background-color: #0097B2;
-    border-radius: 20px;
-    display: block;
     color: white;
+    font-family: Arial;
+}
+
+a {
+    color: #52B788;
+}
+
+a:hover {
+    color: white;
+    transition: 1.1s;
+}
+
+#container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    background-color: var(--color-accent); 
+    justify-content: center;
+    align-items: center;
+}
+
+#container-login {
+    padding: 1.2rem;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    width: 95%;
+    height: auto;
+    background-color: var(--color-primary);
+}
+
+#titulo h1{
+    font-size: 2.2rem;
+    padding: 1.2rem 0;
+}
+
+#login h2{
+    font-size: 1.5rem;
+}
+
+#login p {
+    padding: 5px 5px;
+    font-size: 1.1rem;
+}
+
+.divisao-inputs {
+    margin: 0.6rem;
+    padding: 0.6rem 0.6rem;
+}
+
+.divisao-inputs input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.divisao-inputs {
+    text-align: left;
+}
+
+.textos {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-entrar {
+    background-color: var(--color-accent);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 80%;
+    margin: 20px;
     border: none;
 }
 
-button:hover {
+#btn-entrar:hover {
+    background-color: var(--color-secondary);
+    transition: 300ms;
     cursor: pointer;
-    margin-bottom: 10px;
-    background-color: #008197;
-}
-
-#lembrar-senha {
-    padding-top: 10px;
-    width: 20px;
-}
-
-#esqueceu-senha {
-    text-align: center;
-    font-size: 22px;
 }
 
 
-#esqueceu-senha:hover {
-    cursor: pointer;
-    opacity: 70%;
+#paragrafo-criar-conta {
+    font-size: 1.2rem;
 }
 
-#link-cadastro {
-    text-decoration: none;
-}
+@media (min-width: 1024px) {
+    #container-login {
+        width: 50%;
+        height: auto;
 
-#link-cadastro:hover {
-    opacity: 60%;
-}
-
-span hr{
-    width: 500px;
-}
-
-/* Mini laptops */
-@media (max-width: 1100px) {
-        html, body {
-            overflow-x: hidden;
-            background-image: linear-gradient( #000000, #319921);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-    
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
-            background-image: linear-gradient( #000000, #319921);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        .lembrar-senha {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            font-size: 1.2rem;
-        }
-        
-        .lembrar-senha input {
-            width: 1rem;
-        }
-        
-        .bnt-Entrar {
-            display: flex;
-            justify-content: center;
-            margin: 0;
-        }
-    
-        .bnt-Entrar button{
-            display: flex;
-            justify-content: center;
-            color: var(--font-color-btn);
-            border: none;
-            text-align: center;
-            border-radius: 20px;
-            font-size: 2rem;
-            background-color: var(--bg-color-btn);
-            cursor: pointer;
-        }
-    
-        #div-esqueceu-senha {
-            margin-top: 100px;
-        }    
-    
-        #esqueceu-senha{
-            text-align: center;
-            font-size: 1.2rem;
-        }
-    
-    
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-
-    html, body {
-        overflow-x: hidden;
-        background-image: linear-gradient( #000000, #319921);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        
     }
 
-    body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
-        background-image: linear-gradient( #000000, #319921);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    #titulo h1{
+        font-size: 3rem;
     }
 
-    #logo {
-        width: 500px;
-        text-align: center;
-    }
-
-    #logo h1 {
-        width: 200px;
-    }
-
-
-    #login {
-        width: auto;
-    }
-    
-    .input-email input, .input-senha input {
-        font-size: 1.5rem;
-        border-radius: 10px;
-        background-color: var(--bg-color-input);
-        color: var(--font-color-input);
-    }
-    
-    .lembrar-senha {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        font-size: 1.2rem;
-    }
-    
-    .lembrar-senha input {
-        width: 1rem;
-    }
-
-    .bnt-Entrar button{
-        display: flex;
-        justify-content: center;
-        color: var(--font-color-btn);
-        border: none;
-        text-align: center;
-        border-radius: 20px;
+    #login h2{
         font-size: 2rem;
-        background-color: var(--bg-color-btn);
-        cursor: pointer;
     }
-
-    #div-esqueceu-senha {
-        margin-top: 80px;
-    }    
-
-    #esqueceu-senha{
-        text-align: center;
+            
+    #login p {
+        padding: 5px 5px;
+        font-size: 1.4rem;
+    }
+    .divisao-inputs input {
         font-size: 1.2rem;
-        padding-left: 20px;
-        width: 753.5px;
     }
 
+    .textos,  #paragrafo-criar-conta{
+        font-size: 1.4rem;
+    }
+
+    #btn-entrar {
+        font-size: 2.1rem;
+        width: 30%;
+    }
+    
 }
 
-/* Celular */
+@media (min-width: 1728px) {
+    #container-login {
+        width: 50%;
+        height: auto;
+    }
 
-@media (max-width: 576px) {
+    #titulo h1{
+        font-size: 3.2rem;
+    }
 
-        html, body {
-            background-image: linear-gradient( #000000, #319921);
-    
-        }
-    
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
-            background-image: linear-gradient( #000000, #319921);
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    
-        #login {
-            width: auto;
-        }
-        
-        .input-email input, .input-senha input {
-            margin-top: 40px;
-            margin-left: 20px;
-            border-radius: 10px;
-            background-color: var(--bg-color-input);
-            color: var(--font-color-input);
-        }
-        
-        .lembrar-senha {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        
-        
-        .bnt-Entrar {
-            display: flex;
-            justify-content: center;
-            margin: 0;
-        }
-    
-        .bnt-Entrar button{
-            display: flex;
-            justify-content: center;
-            color: var(--font-color-btn);
-            border: none;
-            text-align: center;
-            border-radius: 20px;
-            background-color: var(--bg-color-btn);
-            cursor: pointer;
-        }
+    #login h2{
+        font-size: 2.2rem;
+    }
+            
+    #login p {
+        padding: 5px 5px;
+        font-size: 1.6rem;
+    }
+
+    .divisao-inputs input {
+        font-size: 1.4rem;
+    }
+
+    .textos,  #paragrafo-criar-conta{
+        font-size: 1.6rem;
+    }
+
+    #btn-entrar {
+        font-size: 2.1rem;
+        width: 30%;
+    }
+
 }

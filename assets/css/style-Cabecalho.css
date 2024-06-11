@@ -1,3 +1,5 @@
+@import url(../reset.css);
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
     background-color: var(--backg-color);
