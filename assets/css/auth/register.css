@@ -34,6 +34,7 @@ a:hover {
     width: 95%;
     height: auto;
     background-color: var(--color-primary);
+    padding: 1.2rem;
 }
 
 #titulo h1{
@@ -52,7 +53,7 @@ a:hover {
 
 .divisao-inputs {
     margin: 0.6rem;
-    padding: 0.6rem 0.6rem;
+    padding: 0.6rem 0.75rem;
 }
 
 .divisao-inputs input {
@@ -85,8 +86,8 @@ a:hover {
 }
 
 #btn-register:hover {
-    background-color: var(--color-primary-dark);
-    transition: 1.1s;
+    background-color: var(--color-secondary);
+    transition: 300ms;
     cursor: pointer;
 }
 
@@ -102,7 +103,6 @@ a:hover {
     }
     #container-register {
         width: 50%;
-        background-color: rebeccapurple;
     }
 
     #titulo h1{
@@ -111,7 +111,6 @@ a:hover {
 
     #register h2{
         font-size: 1.5rem;
-        background-color: #52B788;
     }
             
     #register p {
